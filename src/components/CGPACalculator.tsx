@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { PlusCircle, Calculator, RotateCcw, Share2 } from 'lucide-react';
+import { PlusCircle, Calculator, RotateCcw, Share2, User } from 'lucide-react';
 import SubjectRow from './SubjectRow';
 import Notification from './Notification';
 import ResultCard from './ResultCard';
@@ -133,6 +133,22 @@ const CGPACalculator: React.FC = () => {
           <p className="mt-3 text-muted-foreground text-center max-w-2xl">
             Calculate your Cumulative Grade Point Average with precision and ease
           </p>
+        </div>
+        
+        {/* Team Member Info - Member 3 */}
+        <div className="glass rounded-2xl p-6 shadow-lg mb-10 animate-fade-in">
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-4">
+            <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold text-xl flex-shrink-0">
+              M3
+            </div>
+            <div>
+              <h2 className="text-xl font-bold mb-1 text-center md:text-left">Member 3</h2>
+              <p className="text-muted-foreground text-center md:text-left">CGPA Calculator Developer</p>
+              <p className="mt-2 text-sm">
+                Member 3 developed the core calculation functionality that powers this CGPA Calculator. Their implementation ensures accurate grade point calculations with a focus on performance and reliability.
+              </p>
+            </div>
+          </div>
         </div>
         
         <div className="glass rounded-2xl overflow-hidden shadow-xl">

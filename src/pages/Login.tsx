@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/components/ui/use-toast";
-import { Lock, Mail } from "lucide-react";
+import { Lock, Mail, User } from "lucide-react";
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -97,6 +97,20 @@ const Login = () => {
           <Button variant="outline" asChild className="w-full">
             <Link to="/">Back to Home</Link>
           </Button>
+        </div>
+      </div>
+      
+      {/* Team Member Information */}
+      <div className="glass mt-8 p-6 rounded-xl shadow-lg max-w-md w-full animate-fade-in">
+        <div className="flex items-center space-x-4">
+          <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold text-xl">
+            M2
+          </div>
+          <div>
+            <h2 className="text-xl font-bold">Member 2</h2>
+            <p className="text-muted-foreground">Login Page Developer</p>
+            <p className="mt-2 text-sm">Responsible for implementing the secure authentication system and user login experience.</p>
+          </div>
         </div>
       </div>
     </div>

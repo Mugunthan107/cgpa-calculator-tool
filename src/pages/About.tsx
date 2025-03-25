@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Calculator, Share2, Zap } from "lucide-react";
+import { ArrowLeft, Calculator, Share2, Zap, User } from "lucide-react";
 
 const About = () => {
   return (
@@ -17,6 +17,28 @@ const About = () => {
           <p className="mt-3 text-muted-foreground text-center max-w-2xl">
             Learn more about our professional CGPA calculation tool
           </p>
+        </div>
+        
+        {/* Team Member Info - Member 4 */}
+        <div className="glass rounded-2xl p-8 shadow-xl mb-10">
+          <h2 className="text-2xl font-bold mb-6 flex items-center">
+            <User className="mr-2 h-6 w-6 text-primary" />
+            About The Developer
+          </h2>
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
+            <div className="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold text-2xl flex-shrink-0">
+              M4
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-2 text-center md:text-left">Member 4</h3>
+              <p className="text-lg leading-relaxed mb-4">
+                As the About Page Developer, Member 4 is responsible for creating informative, user-friendly content that explains the CGPA Calculator's functionality and purpose. With expertise in UX writing and information architecture, they ensure users understand how to make the most of this tool.
+              </p>
+              <p className="text-lg leading-relaxed">
+                Member 4 is passionate about creating clear documentation and explanatory content that makes complex tools accessible to all users.
+              </p>
+            </div>
+          </div>
         </div>
         
         <div className="glass rounded-2xl p-8 shadow-xl mb-10">

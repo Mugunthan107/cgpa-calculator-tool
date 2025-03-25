@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calculator, CheckCircle, BarChart4, Share2 } from "lucide-react";
+import { ArrowRight, Calculator, CheckCircle, BarChart4, Share2, Users } from "lucide-react";
 
 const Home = () => {
   return (
@@ -93,6 +93,52 @@ const Home = () => {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
+            </div>
+          </div>
+          
+          {/* Team Members Section */}
+          <div className="mt-16 glass p-8 rounded-2xl shadow-lg max-w-4xl mx-auto animate-fade-in">
+            <h2 className="text-2xl font-bold mb-8 flex items-center justify-center">
+              <Users className="mr-2 h-6 w-6 text-primary" />
+              Our Team Members
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+              <div className="bg-white/50 p-4 rounded-xl hover:shadow-md transition-all flex flex-col items-center">
+                <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold text-xl mb-4">
+                  M1
+                </div>
+                <h3 className="text-lg font-semibold">Member 1</h3>
+                <p className="text-muted-foreground text-sm mt-1">Home Page Developer</p>
+              </div>
+              
+              <div className="bg-white/50 p-4 rounded-xl hover:shadow-md transition-all flex flex-col items-center">
+                <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold text-xl mb-4">
+                  M2
+                </div>
+                <h3 className="text-lg font-semibold">Member 2</h3>
+                <p className="text-muted-foreground text-sm mt-1">Login Page Developer</p>
+              </div>
+              
+              <div className="bg-white/50 p-4 rounded-xl hover:shadow-md transition-all flex flex-col items-center">
+                <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold text-xl mb-4">
+                  M3
+                </div>
+                <h3 className="text-lg font-semibold">Member 3</h3>
+                <p className="text-muted-foreground text-sm mt-1">CGPA Calculator Developer</p>
+              </div>
+              
+              <div className="bg-white/50 p-4 rounded-xl hover:shadow-md transition-all flex flex-col items-center">
+                <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold text-xl mb-4">
+                  M4
+                </div>
+                <h3 className="text-lg font-semibold">Member 4</h3>
+                <p className="text-muted-foreground text-sm mt-1">About Page Developer</p>
+              </div>
+            </div>
+            
+            <div className="mt-8 text-center">
+              <p className="text-muted-foreground">Visit each page to learn more about the team member responsible for it.</p>
             </div>
           </div>
         </div>
